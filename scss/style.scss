@@ -182,12 +182,13 @@ a:visited {
     &__images {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px;
-        grid-auto-rows: 100px;
+        grid-template-rows: 130px;
+        grid-auto-rows: 130px;
         gap: 1em;
     }
 
     &__image-wrapper.active {
+        animation: slideIn 1s forwards;
         grid-column: -1/1;
         grid-row: 1/5;
     }
@@ -250,3 +251,16 @@ a:visited {
 .space-dv {
     height: 20px;
 }
+
+/* Define a CSS animation */
+@keyframes slideIn {
+    0% {
+      transform: translateY(-5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

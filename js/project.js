@@ -102,7 +102,7 @@ const projectImages = projectImgsParent.getElementsByClassName('project-detail__
         const featureListParent = document.createElement('div')
         featureListParent.classList.add('feature-list');
         const heading = document.createElement('h2')
-        heading.innerHTML = 'Features';
+        heading.innerHTML = 'A Deep Dive';
         heading.classList.add('heading-2')
         featureListParent.appendChild(heading)
         featureListParent.appendChild(featureList)        
