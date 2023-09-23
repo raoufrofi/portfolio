@@ -1,0 +1,29 @@
+{
+    "efaad": {
+        "title": "Efaad",
+        "images": [
+            "https://picsum.photos/id/100/300/300",
+            "https://picsum.photos/id/300/300/300",
+            "https://picsum.photos/id/200/300/300"
+        ],
+        "description": "description"
+    },
+    "fujairah": {
+        "title": "Fujairah",
+        "images": [
+            "https://picsum.photos/id/101/300/300",
+            "https://picsum.photos/id/302/300/300",
+            "https://picsum.photos/id/201/300/300"
+        ],
+        "description": "description"
+    },
+    "classified": {
+        "title": "Classified",
+        "images": [
+            "https://picsum.photos/id/102/300/300",
+            "https://picsum.photos/id/303/300/300",
+            "https://picsum.photos/id/204/300/300"
+        ],
+        "description": "description"
+    }
+}

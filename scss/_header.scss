@@ -1,0 +1,40 @@
+@import 'variables';
+
+/*================= HEADER STARTS ==================*/
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    padding-block: 4em 3em;
+
+    position: relative;
+
+    &__title {
+        font-family: $skranji;
+        color: white;
+        padding-block: 0.25em;
+        border-block: thin solid rgba(255, 255, 255, 0.714);
+        font-size: min(calc(16px + 4vw), 42px);
+        display: flex;
+        gap: 0.3em;
+        align-items: center;
+
+        span.material-symbols-outlined {
+            font-size: 100%;
+        }
+    }
+
+    .back-btn {
+        position: absolute;
+        top: 48%;
+        left: 0;
+
+        span {
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
