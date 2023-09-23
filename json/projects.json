@@ -2,17 +2,50 @@
     "efaad": {
         "title": "Efaad",
         "images": [
-            "https://picsum.photos/id/100/300/300",
-            "https://picsum.photos/id/300/300/300",
-            "https://picsum.photos/id/200/300/300"
+            "https://picsum.photos/id/101/300/300",
+            "https://picsum.photos/id/102/300/300",
+            "https://picsum.photos/id/103/300/300",
+            "https://picsum.photos/id/104/300/300",
+            "https://picsum.photos/id/106/300/300"
+
         ],
-        "description": "description"
+        "description": "Dubai Police is an intelligent platform for Dubai Police Students that includes comprehensive and interactive features that contribute to providing student services brightly and innovatively as it seeks to employ intelligent applications to activate the process of employment, internship, communication, follow-up and evaluation for students studying inside and outside the country.The automation of the platform has reduced the processes from 12 Procedures to 3 which has reduced the transaction time to zero, transferring 80+ traditional services which can save 10 manpower and lead to the possibility of 24/7 unmanned automation; enhance the productivity by up to 100% – 200%, saving more than 3,858,140 AED every year and back-office functions for high scalability and resilience.",
+        "stacks": [
+            {
+                "title": "Frontend",
+                "detail": "Angular 14, Bootstrap 5, jquerry, Chart.js"
+            },
+            {
+                "title": "Backend",
+                "detail": "Java Spring Boot"
+            }, 
+            {
+                "title": "Database",
+                "detail": "My Sql"
+            },
+            {
+                "title": "Version Control",
+                "detail": "Git, Bitbucket"
+            }
+        ],
+        "features": [
+            {
+                "title": "Backend",
+                "detail": "Angular 14, Bootstrap 5, jquerry, Chart.js"
+            },
+            {
+                "title": "Backend",
+                "detail": "Angular 14, Bootstrap 5, jquerry, Chart.js"
+            }
+        ]
     },
     "fujairah": {
         "title": "Fujairah",
         "images": [
             "https://picsum.photos/id/101/300/300",
             "https://picsum.photos/id/302/300/300",
+            "https://picsum.photos/id/201/300/300",
+            "https://picsum.photos/id/201/300/300",
             "https://picsum.photos/id/201/300/300"
         ],
         "description": "description"
@@ -22,6 +55,8 @@
         "images": [
             "https://picsum.photos/id/102/300/300",
             "https://picsum.photos/id/303/300/300",
+            "https://picsum.photos/id/204/300/300",
+            "https://picsum.photos/id/204/300/300",
             "https://picsum.photos/id/204/300/300"
         ],
         "description": "description"
