@@ -7,6 +7,7 @@
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Test</title>
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <main class="main">
@@ -18,11 +19,24 @@
         </header>
 
         <div class="project-detail" id="projectDetail">
-            <div class="project-detail__images" id="projectImgs">
+            <div class="project-detail__images__parent">
+                <div class="project-detail__images" id="projectImgs">
+                </div>
             </div>
-
         </div>
     </main>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <span class="right-angle angle" onclick="changeImageWithEvent('ArrowLeft')">&rangle;</span>
+          <span class="left-angle angle" onclick="changeImageWithEvent('ArrowRight')">&langle;</span>
+          <div class="showcaseImg">
+            <img src="" id="showcaseImg" alt="">
+          </div>
+        </div>
+      </div>
+      
 
     <script src="js/project.js"></script>
     <script src="js/script.js"></script>

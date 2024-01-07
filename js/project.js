@@ -4,6 +4,12 @@ const projectDescription = document.getElementById('projectDescription');
 const projectDetail = document.getElementById('projectDetail');
 const projectImgsParent = document.getElementById('projectImgs');
 const projectImages = projectImgsParent.getElementsByClassName('project-detail__image-wrapper');
+const keys = {
+    right: 'ArrowRight',
+    left: 'ArrowLeft'
+}
+let projectImagesArr = [];
+let showcaseImgIndex = 0;
 
 
 (function () {
@@ -29,7 +35,6 @@ const projectImages = projectImgsParent.getElementsByClassName('project-detail__
             }
 
             const projectData = await response.json();
-            console.log(projectData['efaad']);
             setProjectData(projectData[project])
 
         } catch (error) {
@@ -38,7 +43,9 @@ const projectImages = projectImgsParent.getElementsByClassName('project-detail__
     }
 
     function setProjectData(data) {
+        document.title = data?.title
         projectTitle.innerHTML = data?.title
+        projectImagesArr = data.images
         createImages(data.images)
         createProjectDescription(data);
         createStack(data)
@@ -49,8 +56,8 @@ const projectImages = projectImgsParent.getElementsByClassName('project-detail__
         let str = ''
         images.forEach((img, index) => {
             str += `
-            <div class="project-detail__image-wrapper ${index == 0 ? 'active' : ''}" onclick="activeImg(${index})">
-            <img src="${img}"  alt="">
+            <div class="project-detail__image-wrapper" onclick="activeImg(${index});openPopup(${index})">
+            <img src="${img}"  alt="" >
         </div>
             `
         })
@@ -83,7 +90,7 @@ const projectImages = projectImgsParent.getElementsByClassName('project-detail__
         projectDetail.appendChild(stacksTable);
     }
 
-    function createFeatures(data){
+    function createFeatures(data) {
         const features = data.features;
         const featureList = document.createElement('ul');
         Array.from(features).forEach(item => {
@@ -105,7 +112,7 @@ const projectImages = projectImgsParent.getElementsByClassName('project-detail__
         heading.innerHTML = 'A Deep Dive';
         heading.classList.add('heading-2')
         featureListParent.appendChild(heading)
-        featureListParent.appendChild(featureList)        
+        featureListParent.appendChild(featureList)
         projectDetail.appendChild(featureListParent)
     }
 })()
@@ -113,6 +120,42 @@ const projectImages = projectImgsParent.getElementsByClassName('project-detail__
 // It's outside because of scope. If we keep it in IIFE there was a problem with the scope of function
 function activeImg(index) {
     let activeImgDv = Array.from(projectImages).find(item => item.classList.contains('active'))
-    activeImgDv.classList.remove('active');
-    projectImages[index].classList.add('active');
+    // activeImgDv.classList.remove('active');
+    // projectImages[index].classList.add('active');
+    showcaseImgIndex = index;
+    setImageSrcByIndex(showcaseImgIndex);
+}
+
+function openPopup(index) {
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden'
+    showcaseImgIndex = index;
+    document.addEventListener('keydown', handleKeyDown);
+}
+
+function closePopup() {
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+    document.body.style.overflow = 'unset'
+    document.removeEventListener('keydown', handleKeyDown);
+}
+
+function handleKeyDown(event) {
+    // console.log(event);
+    if (event.key == keys.left && showcaseImgIndex > 0)
+        setImageSrcByIndex(--showcaseImgIndex)
+    else if (event.key == keys.right && showcaseImgIndex < projectImages.length - 1)
+        setImageSrcByIndex(++showcaseImgIndex)
+}
+
+// IMAGE ASSIGNER
+function setImageSrcByIndex(index) {
+    document.getElementById('showcaseImg').src = projectImagesArr[index];
+}
+
+function changeImageWithEvent(eventName){
+    var event = new Event(eventName);
+    event.key = eventName
+    handleKeyDown(event);
 }
