@@ -2,14 +2,14 @@
     "efaad": {
         "title": "Efaad",
         "images": [
-            "../assets/efaad/dashboar-pa.jpg",
-            "../assets/efaad/pa-charts.jpg",
-            "../assets/efaad/department-project.jpg",
-            "../assets/efaad/available-projects.jpg",
-            "../assets/efaad/pa-university.jpg",
-            "../assets/efaad/select-department.png",
-            "../assets/efaad/student.jpg",
-            "../assets/efaad//student-course-apply.jpg"
+            "./assets/efaad/dashboar-pa.jpg",
+            "./assets/efaad/pa-charts.jpg",
+            "./assets/efaad/department-project.jpg",
+            "./assets/efaad/available-projects.jpg",
+            "./assets/efaad/pa-university.jpg",
+            "./assets/efaad/select-department.png",
+            "./assets/efaad/student.jpg",
+            "./assets/efaad//student-course-apply.jpg"
             
         ],
         "description": "Dubai Police is an intelligent platform for Dubai Police Students that includes comprehensive and interactive features that contribute to providing student services brightly and innovatively as it seeks to employ intelligent applications to activate the process of employment, internship, communication, follow-up and evaluation for students studying inside and outside the country.The automation of the platform has reduced the processes from 12 Procedures to 3 which has reduced the transaction time to zero, transferring 80+ traditional services which can save 10 manpower and lead to the possibility of 24/7 unmanned automation; enhance the productivity by up to 100% – 200%, saving more than 3,858,140 AED every year and back-office functions for high scalability and resilience.",
