@@ -23,7 +23,7 @@ let showcaseImgIndex = 0;
 
     async function getProjectData(project) {
         try {
-            const response = await fetch('json/projects.json', {
+            const response = await fetch('projects.json', {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',

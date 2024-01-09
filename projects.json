@@ -59,5 +59,29 @@
             "https://picsum.photos/id/204/300/300"
         ],
         "description": "description"
+    },
+    "car-rental-blue":{
+        "title": "Car Rent Blue",
+        "images": [
+            "./assets/car-rental-blue/screen (1).png",
+            "./assets/car-rental-blue/screen (2).png",
+            "./assets/car-rental-blue/screen (3).png",
+            "./assets/car-rental-blue/screen (4).png",
+            "./assets/car-rental-blue/screen (5).png",
+            "./assets/car-rental-blue/screen (6).png",
+            "./assets/car-rental-blue/screen (7).png",
+            "./assets/car-rental-blue/screen (8).png",
+            "./assets/car-rental-blue/screen (9).png",
+            "./assets/car-rental-blue/screen (10).png",
+            "./assets/car-rental-blue/screen (11).png",
+            "./assets/car-rental-blue/screen (12).png",
+            "./assets/car-rental-blue/screen (13).png",
+            "./assets/car-rental-blue/screen (14).png",
+            "./assets/car-rental-blue/screen (15).png",
+            "./assets/car-rental-blue/screen (16).png",
+            "./assets/car-rental-blue/screen (17).png",
+            "./assets/car-rental-blue/screen (18).png"
+
+        ]
     }
 }
